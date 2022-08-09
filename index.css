@@ -54,13 +54,13 @@ button:hover{
 }
 
 header{
-    background-color: #2d85f3;
+    background-color: #007aec;
 }
 
 header .logo{
     font-family: "Hartwell",ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     margin: 0;
-    padding: 25px 30px;
+    padding: 15px 15px;
     font-weight: bold;
     color: rgb(255, 255, 255);
     font-size: 1.6em;
@@ -143,6 +143,15 @@ header a:hover{
     color: white;
 }
 
+#somos-pegatinaGames h2{
+    font-family: "Hartwell",ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+#somos-pegatinaGames p{
+    font-family: "Lato",ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: lighter;
+}
+
 #somos-pegatinaGames .container{
     text-align: center;
     padding: 200px 12px;
@@ -162,17 +171,40 @@ header a:hover{
     margin-top: 0;
     font-size: 3.2em;
     color: black;
+    font-family: "Hartwell",ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
 }
 
 #nuestros-juegos p{
+    font-family: "Lato",ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-weight: normal;
 }
 
 #nuestros-juegos .juego{
     background-position: center center;
     background-size: cover;
-    padding: 50px;
-    margin: 20px;
+    padding: 20px;
+    margin: 15px;
     border-radius: 40px;
+}
+
+#nuestros-juegos button{
+    font-size: 1.60em;
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    width: 130px;
+    font-family: "montserrat", sans-serif;
+    text-transform: uppercase;
+    border-radius: 15px;
+    cursor: pointer;
+    background-image: linear-gradient(to left, #0084ff, #0068ca, #0084ff);
+    background-size: 200%;
+    transition: 0.5s;
+}
+
+#nuestros-juegos button:hover{
+    background-position: right;
 }
 
 .juego:first-child{
@@ -213,12 +245,32 @@ header a:hover{
 }
 
 #jugar h2{
-    font-size: 9vw;
+    font-size: 3em;
+    font-family: "Hartwell",ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
 }
 
 #jugar button{
-    font-size: 5vw;
+    font-size: 2em;
+    border: none;
+    margin: 15px;
+    padding: 20px;
+    width: 200px;
+    font-family: "montserrat", sans-serif;
+    text-transform: uppercase;
+    border-radius: 20px;
+    cursor: pointer;
+    background-image: linear-gradient(to left, #0084ff, #ff00dd, #0084ff);
+    background-size: 200%;
+    transition: 0.2s;
 }
+
+#jugar button:hover{
+    background-position: right;
+}
+
+
+
 
 footer{
     background-color: rgb(230, 230, 230);
@@ -237,11 +289,20 @@ footer .container{
     align-items: flex-end;
 }
 
-@media (min-width: 720px){
+@media (min-width: 800px){
 
     header{
         position: fixed;
         width: 100%;
+    }
+
+    header .logo{
+        font-family: "Hartwell",ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        margin: 0;
+        padding: 25px 30px;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        font-size: 1.8em;
     }
 
     header .container{
@@ -319,6 +380,19 @@ footer .container{
         justify-content: center;
     }
 
+    #nuestros-juegos .juego{
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: white;
+        padding: 40px;
+        margin: 20px;
+        border-radius: 100px;        
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+        text-shadow:2px 2px rgba(0, 0, 0, 0.5) ; 
+    }
+
     #nuestros-juegos .p{
         display: block;
         margin-bottom: 30px;
@@ -332,31 +406,38 @@ footer .container{
         margin-top: 0;
     }
 
-
-
-    #nuestros-juegos .juego{
-        padding: 50x;
-        background-repeat: no-repeat;
-        background-position-y: 0;
-        background-color: white;
-        border-radius: 90px;
-        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+    #nuestros-juegos button{
+        font-size: 1.9em;
+        border: none;
+        margin: 15px;
+        padding: 15px;
+        width: 140px;
+        font-family: "montserrat", sans-serif;
+        text-transform: uppercase;
+        border-radius: 10px;
+        cursor: pointer;
+        background-image: linear-gradient(to left, #0084ff, #0068ca, #0084ff);
+        background-size: 200%;
+        transition: 0.5s;
     }
-
+    
+    #nuestros-juegos button:hover{
+        background-position: right;
+    }
 
     .juego:first-child{
         background-image: linear-gradient(
             0deg,
-           rgba(0,0,0,0.7),
-            rgba(0,0,0,0.7)
+           rgba(0,0,0,0.75),
+            rgba(0,0,0,0.75)
         ), url("img/anhqv.png");
     }
     
     .juego:nth-child(2){
         background-image: linear-gradient(
             0deg, 
-            rgba(0,0,0,0.7),
-            rgba(0,0,0,0.7)
+            rgba(0,0,0,0.75),
+            rgba(0,0,0,0.75)
         )
         ,url("img/hp.png");
     }
@@ -364,18 +445,35 @@ footer .container{
     .juego:nth-child(3){
         background-image: linear-gradient(
             0deg,
-            rgba(0,0,0,0.7),
-            rgba(0,0,0,0.7)
+            rgba(0,0,0,0.75),
+            rgba(0,0,0,0.75)
         ), url("img/anhqv.png");
         
     }
 
     #jugar h2{
-        font-size: 5em;
+        font-size: 4em;
+        font-family: "Hartwell",ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
     }
 
     #jugar button{
         font-size: 3em;
+        border: none;
+        margin: 15px;
+        padding: 30px;
+        width: 300px;
+        font-family: "montserrat", sans-serif;
+        text-transform: uppercase;
+        border-radius: 20px;
+        cursor: pointer;
+        background-image: linear-gradient(to left, #0084ff, #ff00dd, #0084ff);
+        background-size: 200%;
+        transition: 0.2s;
+    }
+    
+    #jugar button:hover{
+        background-position: right;
     }
 
     footer .container{
