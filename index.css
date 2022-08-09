@@ -57,6 +57,7 @@ header{
 }
 
 header .logo{
+    font-family: "Hartwell",ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     margin: 0;
     padding: 25px 30px;
     font-weight: bold;
@@ -95,14 +96,25 @@ header a:hover{
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    background-image: url("img/Nuevo\ proyecto.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    font-family: "Hartwell",ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+
 }
 
 #hero h1{
     color: black;
+    font-size: 3.5em;
+}
+
+#hero h3{
+    color: black;
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 4em;
+    font-weight: unset;
+    font-family: "Lato",ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 #hero button{
@@ -136,7 +148,6 @@ header a:hover{
 }
 
 #nuestros-juegos p{
-    display: none;
 }
 
 #nuestros-juegos .juego{
@@ -144,28 +155,31 @@ header a:hover{
     background-size: cover;
     padding: 50px;
     margin: 20px;
-    border-radius: 20px;
-    font-size: 1.2em;
+    border-radius: 40px;
 }
 
 .juego:first-child{
     background-image: linear-gradient(
-        0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)
+        0deg,
+       rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75)
     ), url("img/anhqv.png");
 }
 
 .juego:nth-child(2){
     background-image: linear-gradient(
         0deg, 
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75)
     )
     ,url("img/hp.png");
 }
 
 .juego:nth-child(3){
     background-image: linear-gradient(
-        0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)
+        0deg,
+        rgba(0,0,0,0.75),
+        rgba(0,0,0,0.75)
     ), url("img/anhqv.png");
     
 }
@@ -204,4 +218,136 @@ footer .container{
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+
+@media (min-width: 720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #hero h3{
+        color: black;
+        font-size: 1.7em;
+        margin-top: 0;
+        margin-bottom: 5em;
+        font-weight: unset;
+        font-family: "Lato",ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    }
+
+    #somos-pegatinaGames .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-pegatinaGames .texto{
+        width: 50%;
+        text-align: initial;
+        padding-left: 50px;
+        max-width: 600px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+
+    }
+
+    #somos-pegatinaGames h2{
+        margin-top: 0px;
+    }
+
+    #somos-pegatinaGames .img-container{
+
+        background-image: url("img/somosPegatina.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 550px;
+        border-radius: 10px;
+    }
+
+    #nuestros-juegos .juegos{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-juegos .p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-juegos h2{
+        font-size: 4em;
+    }
+
+    #nuestros-juegos h3{
+        margin-top: 0;
+    }
+
+
+
+    #nuestros-juegos .juego{
+        padding: 50x;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: white;
+        border-radius: 90px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+    }
+
+
+    .juego:first-child{
+        background-image: linear-gradient(
+            0deg,
+           rgba(0,0,0,0.7),
+            rgba(0,0,0,0.7)
+        ), url("img/anhqv.png");
+    }
+    
+    .juego:nth-child(2){
+        background-image: linear-gradient(
+            0deg, 
+            rgba(0,0,0,0.7),
+            rgba(0,0,0,0.7)
+        )
+        ,url("img/hp.png");
+    }
+    
+    .juego:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.7),
+            rgba(0,0,0,0.7)
+        ), url("img/anhqv.png");
+        
+    }
+
+    #jugar h2{
+        font-size: 5em;
+    }
+
+    #jugar button{
+        font-size: 3em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+
 }
