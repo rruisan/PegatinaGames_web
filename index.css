@@ -41,6 +41,7 @@ button{
 
 button:hover{
     background-color: #1c569c;
+    
 }
 
 .container{
@@ -119,7 +120,23 @@ header a:hover{
 
 #hero button{
     font-size: 1.75em;
+    border: none;
+    margin: 20px;
+    padding: 20px;
+    width: 220px;
+    font-family: "montserrat", sans-serif;
+    text-transform: uppercase;
+    border-radius: 20px;
+    cursor: pointer;
+    background-image: linear-gradient(to left, #0084ff, #ff00dd, #0084ff);
+    background-size: 200%;
+    transition: 0.5s;
 }
+
+#hero button:hover{
+    background-position: right;
+}
+
 
 #somos-pegatinaGames{
     background-color: rgb(35, 35, 35);
@@ -249,6 +266,21 @@ footer .container{
         margin-bottom: 5em;
         font-weight: unset;
         font-family: "Lato",ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,"Noto Sans","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    }
+
+    #hero button{
+        font-size: 1.75em;
+        border: none;
+        margin: 20px;
+        padding: 30px;
+        width: 400px;
+        font-family: "montserrat", sans-serif;
+        text-transform: uppercase;
+        border-radius: 20px;
+        cursor: pointer;
+        background-image: linear-gradient(to left, #0084ff, #ff00dd, #0084ff);
+        background-size: 200%;
+        transition: 0.5s;
     }
 
     #somos-pegatinaGames .container{
